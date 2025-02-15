@@ -45,7 +45,7 @@ namespace DataStructure.DoublyLinkedList
         {
             Console.WriteLine("====================== traversal =============================");
             Node temp = this.head;
-            Node Last = null; ;
+            Node Last = null; 
 
             while(temp != null)
             {
