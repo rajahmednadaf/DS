@@ -2,6 +2,7 @@
 using DataStructure.CircularLinkList;
 using DataStructure.DoublyLinkedList;
 using DataStructure.LinkedList;
+using DataStructure.Trees;
 
 
 //Console.WriteLine("====================== Singly Link List insert at first =============================");
@@ -102,7 +103,7 @@ DL.Display();
 //CL.Display();
 
 
-
+/*
 
 Console.WriteLine("====================== Circular link list delete=============================");
 var CL = new CircularLinkList();
@@ -118,6 +119,24 @@ CL.DeleteFromList(3);
 CL.Display();
 CL.DeleteFromList(4);
 CL.Display();
+*/
+
+int[] nodes = new int[] { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+
+var tree = new BinaryTree();
+
+var node = tree.BuildTree(nodes);
+
+Console.WriteLine("Root node");
+Console.WriteLine(node.data);
+Console.WriteLine("==================PREORDER=================");
+
+tree.PreOrder(node);
+Console.WriteLine("==================INORDER=================");
+tree.InOrder(node);
+Console.WriteLine("==================POSTORDER=================");
+tree.PostOrder(node);
+
 
 
 
