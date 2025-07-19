@@ -137,6 +137,24 @@ tree.InOrder(node);
 Console.WriteLine("==================POSTORDER=================");
 tree.PostOrder(node);
 
+Console.WriteLine("==================Level Order Traversal=================");
+tree.LevelOrderTraversal(node);
+
+Console.WriteLine("==================Count the number of nodes =================");
+
+Console.WriteLine("Number of nodes in the tree are: {0}", tree.CountTheNodesInTree(node));
+
+
+Console.WriteLine("==================Sum the number of nodes =================");
+
+Console.WriteLine("Sum of nodes in the tree are: {0}", tree.CountSumOfTheNodesInTree(node));
+
+Console.WriteLine("================== Height of the TREE=================");
+
+Console.WriteLine("Height of the tree : {0}", tree.HeightOfTheTree(node));
+
+
+Console.WriteLine("==================End =================");
 
 
 
